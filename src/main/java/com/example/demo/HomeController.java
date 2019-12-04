@@ -3,8 +3,6 @@ package com.example.demo;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.util.Collections;
-
 
 @Controller
 public class HomeController {
@@ -12,17 +10,22 @@ public class HomeController {
     public String loadHomepage(){
         return "Homepage";
     }
-    @RequestMapping("/CVpage")
-    public String loadCVpage(){
-        return "CV";
+    @RequestMapping("/Resumepage")
+    public String loadResume(){
+        return "Resume";
     }
-    @RequestMapping("/Homepage")
-    public String loadHome(){
-        return "Homepage";
+    @RequestMapping("/Aboutmepage")
+    public String loadAboutme(){
+        return "Aboutme";
     }
     @RequestMapping("/Hobbypage")
     public String loadHobby(){
         return "Hobbies";
+    }
+
+    @RequestMapping("/portfoliopage")
+    public String loadportfolio(){
+        return "portfolio";
     }
 
 }
